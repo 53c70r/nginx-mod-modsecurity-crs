@@ -1,0 +1,11 @@
+
+Executing(%prep): /bin/sh -e /var/tmp/rpm-tmp.RaMKRs
+Executing(%build): /bin/sh -e /var/tmp/rpm-tmp.y0yxir
+Executing(%install): /bin/sh -e /var/tmp/rpm-tmp.o6FZ0r
+Processing files: nginx-mod-modsecurity-crs-3.2.0-1.fc31.x86_64
+Provides: nginx-mod-modsecurity-crs = 1:3.2.0-1.fc31 nginx-mod-modsecurity-crs(x86-64) = 1:3.2.0-1.fc31
+Requires(rpmlib): rpmlib(CompressedFileNames) <= 3.0.4-1 rpmlib(FileDigests) <= 4.6.0-1 rpmlib(PayloadFilesHavePrefix) <= 4.0-1
+Checking for unpackaged file(s): /usr/lib/rpm/check-files /home/user/rpmbuild/BUILDROOT/nginx-mod-modsecurity-crs-3.2.0-1.fc31.x86_64
+Wrote: /home/user/git/nginx-mod-modsecurity-crs/nginx-mod-modsecurity-crs-3.2.0-1.fc31.src.rpm
+Wrote: /home/user/git/nginx-mod-modsecurity-crs/x86_64/nginx-mod-modsecurity-crs-3.2.0-1.fc31.x86_64.rpm
+Executing(%clean): /bin/sh -e /var/tmp/rpm-tmp.doLxBr
