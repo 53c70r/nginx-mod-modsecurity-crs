@@ -8,7 +8,7 @@ Summary:        OWASP-CRS for Nginx
 License:        ASL 2.0
 URL:            https://owasp.org/www-project-modsecurity-core-rule-set/
 Group:          System Environment/Daemons
-Source0:        https://github.com/SpiderLabs/owasp-modsecurity-crs/archive/v%{version}.tar.gz
+Source0:        https://github.com/coreruleset/coreruleset/archive/v%{version}.tar.gz
 Source1:        load_file.conf
 Source2:        modsecurity.conf
 
