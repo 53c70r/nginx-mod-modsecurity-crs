@@ -33,7 +33,7 @@ The OWASP ModSecurity Core Rule Set (CRS) is a set of generic attack detection r
 %{__install} -p -D -m 644 %{SOURCE2} %{buildroot}%{_sysconfdir}/nginx/conf.d/modsecurity.conf
 
 %files
-%license %{SOURCE3}
+%license LICENSE
 %defattr (-,root,root)
 %{_sysconfdir}/nginx/modsecurity.d
 %{_sysconfdir}/nginx/conf.d/modsecurity.conf
