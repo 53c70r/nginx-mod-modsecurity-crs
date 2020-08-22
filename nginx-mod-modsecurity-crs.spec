@@ -12,6 +12,7 @@ Group:          System Environment/Daemons
 Source0:        https://github.com/coreruleset/coreruleset/archive/v%{version}.tar.gz
 Source1:        load_file.conf
 Source2:        modsecurity.conf
+Source3:        LICENSE
 
 Requires:       nginx-mod-modsecurity
 
@@ -31,6 +32,7 @@ The OWASP ModSecurity Core Rule Set (CRS) is a set of generic attack detection r
 %{__install} -p -D -m 644 %{SOURCE2} %{buildroot}%{_sysconfdir}/nginx/conf.d/modsecurity.conf
 
 %files
+%license %{SOURCE3}
 %defattr (-,root,root)
 %{_sysconfdir}/nginx/modsecurity.d
 %{_sysconfdir}/nginx/conf.d/modsecurity.conf
