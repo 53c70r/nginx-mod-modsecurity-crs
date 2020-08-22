@@ -12,7 +12,7 @@ Source0:        https://github.com/coreruleset/coreruleset/archive/v%{version}.t
 Source1:        load_file.conf
 Source2:        modsecurity.conf
 
-Requires:       nginx
+Requires:       nginx-mod-modsecurity
 
 %description
 The OWASP ModSecurity Core Rule Set (CRS) is a set of generic attack detection rules for use with ModSecurity or compatible web application firewalls. The CRS aims to protect web applications from a wide range of attacks, including the OWASP Top Ten, with a minimum of false alerts.
