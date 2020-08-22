@@ -26,7 +26,6 @@ The OWASP ModSecurity Core Rule Set (CRS) is a set of generic attack detection r
 %{__install} -d %{buildroot}%{_sysconfdir}/nginx/modsecurity.d/coreruleset/rules/
 %{__install} -p -D -m 644 ./coreruleset-%{version}/rules/* %{buildroot}%{_sysconfdir}/nginx/modsecurity.d/coreruleset/rules/
 %{__install} -p -D -m 644 ./coreruleset-%{version}/crs-setup.conf.example %{buildroot}%{_sysconfdir}/nginx/modsecurity.d/coreruleset/crs-setup.conf
-%{__install} -p -D -m 644 ./coreruleset-%{version}/LICENSE %{buildroot}%{_sysconfdir}/nginx/modsecurity.d/coreruleset/LICENSE
 %{__install} -p -D -m 644 %{SOURCE1} %{buildroot}%{_sysconfdir}/nginx/modsecurity.d/coreruleset/load_file.conf
 %{__install} -p -D -m 644 %{SOURCE2} %{buildroot}%{_sysconfdir}/nginx/conf.d/modsecurity.conf
 
