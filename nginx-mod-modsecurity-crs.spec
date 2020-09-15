@@ -2,7 +2,7 @@
 
 Name:           nginx-mod-modsecurity-crs
 Version:        3.3.0
-Release:        2%{?dist}
+Release:        3%{?dist}
 Summary:        OWASP-CRS for Nginx
 License:        ASL 2.0
 BuildArch:      noarch
