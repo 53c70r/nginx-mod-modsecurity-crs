@@ -21,7 +21,7 @@ use with ModSecurity or compatible web application firewalls. The CRS aims to pr
 applications from a wide range of attacks, including the OWASP Top Ten, with a minimum of false alerts.
 
 %prep
-%setup -c -q
+%autosetup -n coreruleset-%{version} -S git
 
 %install
 %{__install} -d %{buildroot}%{_sysconfdir}/nginx/modsecurity.d/coreruleset/rules/
