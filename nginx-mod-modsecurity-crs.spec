@@ -12,6 +12,8 @@ Source0:        https://github.com/coreruleset/coreruleset/archive/v%{version}.t
 Source1:        load_file.conf
 Source2:        modsecurity.conf
 
+BuildRequires: git-core
+
 Obsoletes:      mod_security_crs
 Requires:       nginx-mod-modsecurity
 
