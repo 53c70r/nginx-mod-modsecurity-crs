@@ -27,8 +27,8 @@ applications from a wide range of attacks, including the OWASP Top Ten, with a m
 
 %install
 %{__install} -d %{buildroot}%{_sysconfdir}/nginx/modsecurity.d/coreruleset/rules/
-%{__install} -p -D -m 0644 ./coreruleset-%{version}/rules/* %{buildroot}%{_sysconfdir}/nginx/modsecurity.d/coreruleset/rules/
-%{__install} -p -D -m 0644 ./coreruleset-%{version}/crs-setup.conf.example %{buildroot}%{_sysconfdir}/nginx/modsecurity.d/coreruleset/crs-setup.conf
+%{__install} -p -D -m 0644 rules/* %{buildroot}%{_sysconfdir}/nginx/modsecurity.d/coreruleset/rules/
+%{__install} -p -D -m 0644 crs-setup.conf.example %{buildroot}%{_sysconfdir}/nginx/modsecurity.d/coreruleset/crs-setup.conf
 %{__install} -p -D -m 0644 %{SOURCE1} %{buildroot}%{_sysconfdir}/nginx/modsecurity.d/coreruleset/load_file.conf
 %{__install} -p -D -m 0644 %{SOURCE2} %{buildroot}%{_sysconfdir}/nginx/conf.d/modsecurity.conf
 
