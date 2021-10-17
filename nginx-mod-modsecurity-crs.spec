@@ -1,6 +1,6 @@
 %global debug_package %{nil}
 
-Name:           nginx-mod-modsecurity-crs
+Name:           modsecurity-nginx-crs
 Version:        3.3.2
 Release:        4%{?dist}
 Summary:        OWASP-CRS for Nginx
@@ -15,7 +15,7 @@ Source2:        modsecurity.conf
 BuildRequires: git-core
 
 Obsoletes:      mod_security_crs
-Requires:       nginx-mod-modsecurity
+Requires:       modsecurity-nginx
 
 %description
 The OWASP ModSecurity Core Rule Set (CRS) is a set of generic attack detection rules for
