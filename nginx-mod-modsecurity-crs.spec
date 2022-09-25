@@ -1,8 +1,8 @@
 %global debug_package %{nil}
 
 Name:           modsecurity-nginx-crs
-Version:        3.3.2
-Release:        4%{?dist}
+Version:        3.3.4
+Release:        1%{?dist}
 Summary:        OWASP-CRS for Nginx
 License:        ASL 2.0
 BuildArch:      noarch
