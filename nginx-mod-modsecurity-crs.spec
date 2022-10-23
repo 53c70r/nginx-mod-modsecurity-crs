@@ -2,7 +2,7 @@
 
 Name:           modsecurity-nginx-crs
 Version:        3.3.4
-Release:        1%{?dist}
+Release:        2%{?dist}
 Summary:        OWASP-CRS for Nginx
 License:        ASL 2.0
 BuildArch:      noarch
@@ -14,7 +14,6 @@ Source2:        modsecurity.conf
 
 BuildRequires: git-core
 
-Obsoletes:      mod_security_crs
 Requires:       modsecurity-nginx
 
 %description
@@ -33,8 +32,8 @@ applications from a wide range of attacks, including the OWASP Top Ten, with a m
 %{__install} -p -D -m 0644 %{SOURCE2} %{buildroot}%{_sysconfdir}/nginx/conf.d/modsecurity.conf
 
 %files
+%license LICENSE
 %config(noreplace) %{_sysconfdir}/nginx/modsecurity.d/coreruleset/crs-setup.conf
 %config(noreplace) %{_sysconfdir}/nginx/conf.d/modsecurity.conf
 %{_sysconfdir}/nginx/modsecurity.d/coreruleset
 %{_sysconfdir}/nginx/conf.d/modsecurity.conf
-%license LICENSE
